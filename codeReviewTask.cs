@@ -75,6 +75,6 @@ public class Game
 	public async void StartGame()
 	{
 		await GamesDb.Start(gameId, JsonSerializer.Serialize(this));
-		await GamesKafkaQueue.SendStart(gameId, JsonSerializer.Serialize(this)));
+		await GamesKafkaQueue.SendStart(gameId, JsonSerializer.Serialize(this));
 	}
 }
